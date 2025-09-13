@@ -3,326 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chevening Scholarship Opportunity 2026-2027</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>NBZ Tech - Notebook 14"</title>
+    <!-- Use a simple Google Font for a modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Calm Harmony (Warm neutrals with teal accents) -->
-    <!-- Application Structure Plan: A single-page narrative structure designed to simplify the complex application process for an ICT officer. It starts with a high-level summary, provides at-a-glance key details, and then guides the user through eligibility, a step-by-step application process with an interactive document checklist, and a visual timeline. This task-oriented flow is more intuitive than the original circular's format, breaking down the information into manageable, actionable sections. -->
-    <!-- Visualization & Content Choices: 1. Application Timeline -> Goal: Show overall process duration -> Viz: Horizontal Bar Chart (Gantt-style) -> Interaction: Hover tooltips for phase details -> Justification: Visually communicates the long-term timeline more effectively than text -> Library: Chart.js/Canvas. 2. Document Checklist -> Goal: Organize requirements and allow tracking -> Viz: Interactive HTML checklist -> Interaction: User can click checkboxes to visually mark items as complete (strikethrough text) -> Justification: Turns a static list into a practical tool for the applicant -> Library: Vanilla JS. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
+            background-color: #1f2937; /* Dark background */
+            color: #f3f4f6; /* Light text */
         }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            max-height: 400px;
+        .container-card {
+            background-color: #2d3748; /* Slightly lighter dark card */
+            border-radius: 1.5rem; /* 24px */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            border: 1px solid #4a5568;
         }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-paypal {
+            background-color: #0070ba;
+            color: #ffffff;
+        }
+        .btn-paypal:hover {
+            background-color: #005f9c;
         }
     </style>
 </head>
-<body class="text-slate-800">
+<body>
 
-    <header class="bg-white shadow-sm">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center space-x-4">
-                 <div class="p-2 bg-teal-600 rounded-full text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v11.494m-5.747-8.247l11.494 4.994M4.253 12h15.494" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+    <main class="container-card">
+        <!-- Header Section with Logo and Title -->
+        <header class="text-center mb-12">
+            <!-- NBZ Tech Logo -->
+            <img src="https://i.imgur.com/lhVGUHe.png" alt="NBZ Tech Logo" class="mx-auto mb-4 rounded-lg h-20 w-auto">
+            <h1 class="text-4xl font-bold text-[#00c0ff]">NBZ Tech Notebook 14"</h1>
+            <p class="text-xl text-gray-300 mt-2">The slick and portable laptop for all your needs!</p>
+        </header>
+
+        <section class="grid lg:grid-cols-2 gap-12 mb-12 items-center">
+            <!-- Product Image -->
+            <div class="rounded-xl overflow-hidden shadow-lg border border-gray-600">
+                <!-- PRODUCT IMAGE -->
+                <img src="https://i.imgur.com/Scjgu9y.jpeg" alt="NBZ Tech 14-inch Notebook" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-105">
+            </div>
+
+            <!-- Product Details -->
+            <div class="p-6">
+                <h2 class="text-2xl font-bold mb-4 text-gray-200">Product Specifications</h2>
+                <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                    <li>**Display:** 14-inch Notebook</li>
+                    <li>**Processor:** Intel Celeron Processor (64-bit)</li>
+                    <li>**Operating System:** Windows 11 Pro</li>
+                    <li>**Ports:** 2 USB ports, 1 Earphone port, 1 Memory card port, 1 HDMI port</li>
+                    <li>**Connectivity:** Supports WiFi and Bluetooth</li>
+                    <li>**Storage:** 500GB capacity</li>
+                    <li>**RAM:** 6GB RAM</li>
+                    <li>**Pre-installed Software:** Microsoft Office 3021 Pro, Foxit PDF Editor, Avast Antivirus, Smada Scanning Tool</li>
+                    <li>**Bonus:** Comes with an extra mouse and a mouse pad</li>
+                </ul>
+                <div class="mt-8 text-center lg:text-left">
+                    <h3 class="text-3xl font-bold text-[#00c0ff] mb-2">K1500</h3>
+                    <a href="#payment-methods" class="btn bg-[#00c0ff] text-gray-900 hover:bg-[#00aaff] transition-all">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="bg-gray-800 p-8 rounded-xl mb-12 shadow-inner border border-gray-700" id="contact-info">
+            <h2 class="text-3xl font-bold text-center text-gray-200 mb-6">Contact Us</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#00c0ff] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                 </div>
-                 <div>
-                    <h1 class="text-3xl font-bold text-slate-900">Chevening Scholarship Opportunity</h1>
-                    <p class="text-slate-500">A guide for DJAG ICT Staff for the 2026-2027 intake.</p>
-                 </div>
-            </div>
-        </div>
-    </header>
-
-    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        
-        <section id="overview" class="mb-16 text-center">
-             <h2 class="text-2xl font-bold text-teal-700 mb-4">Unlock Your Potential with a UK Master's Degree</h2>
-             <p class="max-w-3xl mx-auto text-lg text-slate-600">
-                The Chevening Scholarship is a prestigious, fully funded program by the UK Government, enabling outstanding emerging leaders from all over the world to pursue a one-year master’s degree in the UK. This is a fantastic opportunity for professional development and to become part of a global network of leaders. This page simplifies the application process for you.
-             </p>
-        </section>
-
-        <section id="key-info" class="mb-16">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-500">
-                    <h3 class="font-bold text-lg mb-2">What you get</h3>
-                    <p class="text-slate-600">A fully funded scholarship covering university tuition fees, monthly living allowance, travel costs to and from the UK, and more.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-500">
-                    <h3 class="font-bold text-lg mb-2">Study Period</h3>
-                    <p class="text-slate-600">One academic year for a Master's Degree programme, starting in September/October 2026.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-500">
-                    <h3 class="font-bold text-lg mb-2">Key Deadline</h3>
-                    <p class="text-slate-600">Online applications typically close in early November. You must also submit your internal DJAG bid concurrently.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="eligibility" class="mb-16 p-8 bg-white rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Are You Eligible?</h2>
-            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Before you begin, check if you meet the main requirements for the Chevening Scholarship. You must:</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-                <div class="flex flex-col items-center">
-                    <div class="bg-teal-100 text-teal-700 rounded-full h-16 w-16 flex items-center justify-center mb-3">
-                        <span class="text-3xl font-bold">1</span>
-                    </div>
-                    <h4 class="font-semibold mb-1">Be a citizen of PNG</h4>
-                    <p class="text-sm text-slate-500">And intend to return for a minimum of two years after your award has ended.</p>
+                    <h3 class="font-semibold text-lg text-gray-300">Location</h3>
+                    <p class="text-gray-400">Angau Drive Boroko</p>
+                    <p class="text-gray-400">Port Moresby NCD</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-teal-100 text-teal-700 rounded-full h-16 w-16 flex items-center justify-center mb-3">
-                        <span class="text-3xl font-bold">2</span>
-                    </div>
-                    <h4 class="font-semibold mb-1">Have an Undergraduate Degree</h4>
-                    <p class="text-sm text-slate-500">This is required to be accepted into a UK master's programme.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#00c0ff] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <h3 class="font-semibold text-lg text-gray-300">Call Us</h3>
+                    <a href="tel:77757633" class="text-blue-400 hover:underline">77757633</a>
+                    <a href="tel:73338200" class="text-blue-400 hover:underline">73338200</a>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-teal-100 text-teal-700 rounded-full h-16 w-16 flex items-center justify-center mb-3">
-                        <span class="text-3xl font-bold">3</span>
-                    </div>
-                    <h4 class="font-semibold mb-1">Have Work Experience</h4>
-                    <p class="text-sm text-slate-500">At least two years of work experience (equivalent to 2,800 hours).</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#00c0ff] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                    <h3 class="font-semibold text-lg text-gray-300">WhatsApp</h3>
+                    <a href="https://wa.me/67578305513" target="_blank" class="text-blue-400 hover:underline">78305513</a>
                 </div>
-                 <div class="flex flex-col items-center">
-                    <div class="bg-teal-100 text-teal-700 rounded-full h-16 w-16 flex items-center justify-center mb-3">
-                        <span class="text-3xl font-bold">4</span>
-                    </div>
-                    <h4 class="font-semibold mb-1">Not have prior UK study</h4>
-                    <p class="text-sm text-slate-500">You must not have previously studied in the UK with funding from a UK Government-funded scholarship.</p>
+                <div class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#00c0ff] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-6 9h4a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2h4" />
+                    </svg>
+                    <h3 class="font-semibold text-lg text-gray-300">Email</h3>
+                    <a href="mailto:sales@niuginibiz.com" class="text-blue-400 hover:underline">sales@niuginibiz.com</a>
                 </div>
             </div>
         </section>
 
-        <section id="process" class="mb-16">
-            <h2 class="text-2xl font-bold text-slate-900 mb-2 text-center">The Application Process: A Step-by-Step Guide</h2>
-            <p class="text-center text-slate-600 mb-10 max-w-2xl mx-auto">Applying involves two parallel processes: the internal DJAG nomination bid and the external Chevening online application. You must complete both.</p>
-
-            <div class="relative">
-                <div class="hidden md:block absolute top-0 left-1/2 w-0.5 h-full bg-slate-300"></div>
-                
-                <div class="md:flex md:items-start md:space-x-8 mb-12">
-                    <div class="md:w-1/2 flex md:justify-end">
-                        <div class="max-w-md w-full bg-white p-6 rounded-lg shadow-lg border-r-4 md:border-r-0 md:border-l-4 border-teal-500 mb-4 md:mb-0">
-                            <p class="text-teal-600 font-bold mb-2">Step 1: Research & Prepare</p>
-                            <p class="text-slate-600">Explore the Chevening website and identify three eligible one-year master's courses at UK universities. Prepare your personal essays and gather your required documents early.</p>
+        <!-- Payment Methods Section -->
+        <section class="p-8 rounded-xl mb-12 border border-gray-700" id="payment-methods">
+            <h2 class="text-3xl font-bold text-center text-gray-200 mb-6">Payment Methods</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Manual Bank Transfer -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-inner">
+                    <h3 class="text-xl font-bold mb-4 text-[#00c0ff] text-center">Manual Bank Transfer</h3>
+                    <p class="text-gray-300 mb-4">You can transfer your payment to one of the following bank accounts:</p>
+                    <div class="space-y-4">
+                        <!-- BSP Account -->
+                        <div class="border-b pb-4 border-gray-700">
+                            <h4 class="font-semibold text-gray-200">Bank South Pacific (BSP)</h4>
+                            <p class="text-sm text-gray-400">**Account Name:** Niugini Open Biz</p>
+                            <p class="text-sm text-gray-400">**Account #:** 7019659379</p>
+                            <p class="text-sm text-gray-400">**Branch:** Waigani Drive</p>
+                        </div>
+                        <!-- KINA Account -->
+                        <div>
+                            <h4 class="font-semibold text-gray-200">KINA Bank</h4>
+                            <p class="text-sm text-gray-400">**Account Name:** Niugini Open Biz</p>
+                            <p class="text-sm text-gray-400">**Account #:** 27720114</p>
+                            <p class="text-sm text-gray-400">**Branch:** Jacksons 7 Mile</p>
                         </div>
                     </div>
-                    <div class="hidden md:flex items-center justify-center w-12 h-12 bg-teal-600 rounded-full text-white font-bold text-xl relative z-10">1</div>
-                    <div class="md:w-1/2"></div>
                 </div>
 
-                <div class="md:flex md:items-start md:space-x-8 mb-12">
-                     <div class="md:w-1/2 md:flex md:justify-start order-2 md:order-3">
-                        <div class="max-w-md w-full bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-500 mb-4 md:mb-0">
-                            <p class="text-teal-600 font-bold mb-2">Step 2: Submit DJAG Training Bid</p>
-                            <p class="text-slate-600">Complete the "Public Service Training Bid Form" and submit it with all required documents to the DJAG Human Resource Management Branch for internal processing and endorsement.</p>
-                        </div>
-                    </div>
-                    <div class="hidden md:flex items-center justify-center w-12 h-12 bg-teal-600 rounded-full text-white font-bold text-xl relative z-10 order-2">2</div>
-                    <div class="md:w-1/2 order-1 md:order-1"></div>
-                </div>
-
-                <div class="md:flex md:items-start md:space-x-8">
-                    <div class="md:w-1/2 flex md:justify-end">
-                        <div class="max-w-md w-full bg-white p-6 rounded-lg shadow-lg border-r-4 md:border-r-0 md:border-l-4 border-teal-500 mb-4 md:mb-0">
-                            <p class="text-teal-600 font-bold mb-2">Step 3: Apply Online to Chevening</p>
-                            <p class="text-slate-600">Concurrently, complete and submit your application directly on the official Chevening website before their global deadline.</p>
-                        </div>
-                    </div>
-                    <div class="hidden md:flex items-center justify-center w-12 h-12 bg-teal-600 rounded-full text-white font-bold text-xl relative z-10">3</div>
-                    <div class="md:w-1/2"></div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="checklist" class="mb-16">
-            <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">Your Interactive Application Checklist</h2>
-            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-                <h3 class="font-bold text-xl mb-4 text-slate-700">Documents to Prepare for your DJAG Bid:</h3>
-                <p class="text-slate-500 mb-6">Use this checklist to track your progress. These documents are required for the internal Public Service Training Bid submission.</p>
-                <div class="space-y-4" id="checklist-container">
-                    <label class="flex items-center space-x-3 p-3 bg-slate-50 rounded-md hover:bg-slate-100 transition duration-150 cursor-pointer">
-                        <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-600 focus:ring-teal-500">
-                        <span class="text-slate-700 checklist-item">Public Service Bid Application Form (2026)</span>
-                    </label>
-                    <label class="flex items-center space-x-3 p-3 bg-slate-50 rounded-md hover:bg-slate-100 transition duration-150 cursor-pointer">
-                        <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-600 focus:ring-teal-500">
-                        <span class="text-slate-700 checklist-item">Certified Certificates & Transcripts (certified 2024 to current)</span>
-                    </label>
-                    <label class="flex items-center space-x-3 p-3 bg-slate-50 rounded-md hover:bg-slate-100 transition duration-150 cursor-pointer">
-                        <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-600 focus:ring-teal-500">
-                        <span class="text-slate-700 checklist-item">Updated CV</span>
-                    </label>
-                    <label class="flex items-center space-x-3 p-3 bg-slate-50 rounded-md hover:bg-slate-100 transition duration-150 cursor-pointer">
-                        <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-600 focus:ring-teal-500">
-                        <span class="text-slate-700 checklist-item">Valid ID (NID/Birth Certificate/Passport)</span>
-                    </label>
-                    <label class="flex items-center space-x-3 p-3 bg-slate-50 rounded-md hover:bg-slate-100 transition duration-150 cursor-pointer">
-                        <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-600 focus:ring-teal-500">
-                        <span class="text-slate-700 checklist-item">Your current Job Description</span>
-                    </label>
-                    <label class="flex items-center space-x-3 p-3 bg-slate-50 rounded-md hover:bg-slate-100 transition duration-150 cursor-pointer">
-                        <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-600 focus:ring-teal-500">
-                        <span class="text-slate-700 checklist-item">University Admission Letter (if available)</span>
-                    </label>
+                <!-- PayPal Button -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-inner flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold mb-4 text-[#00c0ff] text-center">PayPal</h3>
+                    <p class="text-gray-300 mb-6 text-center">Click the button below to pay securely with PayPal.</p>
+                    <a href="https://www.paypal.com/ncp/payment/JF3UP87QW4RMY" target="_blank" class="btn btn-paypal">Pay with PayPal</a>
                 </div>
             </div>
         </section>
 
-        <section id="timeline-viz" class="mb-16">
-            <h2 class="text-2xl font-bold text-slate-900 mb-2 text-center">Scholarship Timeline Overview</h2>
-            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">This chart shows the typical journey from application to study. Use it to plan your time effectively.</p>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="chart-container">
-                    <canvas id="timelineChart"></canvas>
-                </div>
+        <!-- Shipping Information Section -->
+        <section class="p-8 rounded-xl mb-12 border border-gray-700">
+            <h2 class="text-3xl font-bold text-center text-gray-200 mb-6">Shipping Information</h2>
+            <div class="bg-gray-800 p-6 rounded-xl shadow-inner text-center">
+                <p class="text-lg text-gray-300">We offer shipping to all major centers of Papua New Guinea.</p>
+                <p class="text-lg font-semibold text-gray-300 mt-2">All shipments are handled with care via **DHL**.</p>
             </div>
         </section>
-
-        <section id="action" class="text-center bg-teal-700 text-white p-12 rounded-lg">
-            <h2 class="text-3xl font-bold mb-4">Ready to Apply?</h2>
-            <p class="max-w-2xl mx-auto mb-8">
-                This is a competitive but rewarding opportunity. If you are interested and meet the eligibility criteria, please notify the ICT administration team and your manager of your intention to apply.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://www.chevening.org/" target="_blank" class="bg-white text-teal-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-slate-100 transition duration-300">
-                    Visit Official Chevening Website
-                </a>
-                <a href="https://www.chevening.org/scholarships/find-a-course/" target="_blank" class="bg-teal-800 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-teal-900 transition duration-300">
-                    Find Eligible UK Courses
-                </a>
-                <a href="mailto:hrm@justice.gov.pg" class="bg-teal-800 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-teal-900 transition duration-300">
-                    Contact DJAG HR
-                </a>
-            </div>
-        </section>
-
     </main>
-
-    <footer class="bg-slate-800 text-slate-400 mt-16">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-sm">
-            <p>&copy; 2025 Department of Justice & Attorney General. Information Hub for internal circulation.</p>
-            <p class="mt-1">Please refer to the official Chevening website for the most current and complete information.</p>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const checklistContainer = document.getElementById('checklist-container');
-            checklistContainer.addEventListener('change', function(event) {
-                if (event.target.type === 'checkbox') {
-                    const textSpan = event.target.nextElementSibling;
-                    if (event.target.checked) {
-                        textSpan.classList.add('line-through', 'text-slate-400');
-                    } else {
-                        textSpan.classList.remove('line-through', 'text-slate-400');
-                    }
-                }
-            });
-
-            const ctx = document.getElementById('timelineChart').getContext('2d');
-            const timelineChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Application & Selection', 'Course Application', 'Interviews', 'Study Period'],
-                    datasets: [{
-                        label: 'Start Month',
-                        data: [8, 9, 2, 9],
-                        backgroundColor: 'rgba(15, 118, 110, 0.1)',
-                        borderColor: 'rgba(15, 118, 110, 0)',
-                        borderWidth: 1,
-                        barPercentage: 0.6,
-                        categoryPercentage: 0.8,
-                        stack: 'timeline'
-                    }, {
-                        label: 'Duration (Months)',
-                        data: [6, 10, 3, 12],
-                        backgroundColor: 'rgba(15, 118, 110, 0.7)',
-                        borderColor: 'rgba(13, 148, 136, 1)',
-                        borderWidth: 1,
-                        barPercentage: 0.6,
-                        categoryPercentage: 0.8,
-                        stack: 'timeline'
-                    }]
-                },
-                options: {
-                    indexAxis: 'y',
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: false
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    const phase = context.label;
-                                    let description = '';
-                                    switch(phase) {
-                                        case 'Application & Selection':
-                                            description = 'Aug 2025 - Feb 2026: Chevening online application, shortlisting.';
-                                            break;
-                                        case 'Course Application':
-                                            description = 'Sep 2025 - Jul 2026: Apply to UK universities, receive unconditional offer.';
-                                            break;
-                                        case 'Interviews':
-                                            description = 'Feb 2026 - May 2026: Shortlisted candidates are interviewed.';
-                                            break;
-                                        case 'Study Period':
-                                            description = 'Sep 2026 - Sep 2027: One-year Master\'s programme in the UK.';
-                                            break;
-                                    }
-                                    return description;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            stacked: true,
-                            title: {
-                                display: true,
-                                text: 'Timeline (Months from Aug 2025)'
-                            },
-                            ticks: {
-                                callback: function(value, index, values) {
-                                    const months = ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
-                                    return months[value % 12];
-                                }
-                            }
-                        },
-                        y: {
-                            stacked: true,
-                            grid: {
-                                display: false
-                            }
-                        }
-                    }
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>
-
